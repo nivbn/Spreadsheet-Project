@@ -1,0 +1,93 @@
+
+    Welcome to the Spreadsheet Program Help!
+
+    This guide will help you navigate through the key features of the Spreadsheet Program,
+    allowing you to make the most out of your data manipulation and analysis tasks.
+
+    - Running the program:
+        - Command line - python main.py
+
+    - Editing Cells:
+        - Simply click on any cell to select it.
+        - Input direct values or formulas into the Value: entry field.
+          Note: It can't be edited directly in the cell.
+
+            - Direct values: Simply type the value (e.g., 123, Intro).
+            - Formulas: Start with = and follow with the formula (e.g., =A1+B2).
+              The program supports basic arithmetic operations +, -, *, /, %, **.
+
+    - Selecting Cells:
+        - To select a cell, simply click on it within the table.
+          The selected cell will be highlighted, and its data will be
+          displayed in the "Cell Data" section on the right side of the operation frame.
+
+        - Upon selection, the cell's address (e.g., A1, B2) will automatically fill
+          the last clicked entry among "Start Cell", "End Cell", "Target Cell" or "Value".
+
+        - Value Entry - Appending Cell Addresses:
+            - If the "Value" entry was the last selected before clicking on a cell,
+              the program appends the clicked cell's address to the current content
+              of the "Value" entry. This feature is especially useful for creating
+              formulas that involve multiple cells.
+
+                - For example, if the "Value" entry already contains =A1 and you click
+                  on cell B2, the entry will update to =A1B2.
+                  So if yoy want To make arithmetic operations between few cells,
+                  just add the relevant operator before clicking the next cell.
+
+                - If the "Value" entry is empty or doesn't start with =,
+                  clicking on a cell will start a new formula in the "Value" entry
+                  with the clicked cell's address, prefixed with =.
+
+    - Using Cell Data:
+        - The "Cell Data" display on the right side of the operation frame shows
+          the current value or formula of the selected cell.
+
+        - For cells with formulas, the formula itself (e.g., =A1+B2) is shown.
+          For cells with direct values, the value is displayed as is.
+
+    - Formulas:
+        - Start formulas with '='. Example: '=A1+B2'.
+
+    - Operations:
+        - Choose an operation from the dropdown list to perform various actions
+          like setting values, calculating sums, averages, maximum, minimum values,
+          and counting numeric cells.
+
+        - Specify the Start Cell and End Cell to define the range of cells the operation
+          will apply to.
+
+    - Undo:
+        - To perform an undo, simply click the "Undo" button on the operation frame.
+          If the undo action is possible (if there is a previously saved state to revert to),
+          the spreadsheet will immediately reflect the reverted state to the last time that
+          an execution made.
+
+        - The ability to undo is dependent on the availability of previously saved states.
+          If you've just started a new session and haven't made any changes yet,
+          or if you've reached the limit of saved states that the program can store,
+          the undo option may be temporarily unavailable.
+
+    - Changing Column Widths
+        - If a value longer than the width of the column is entered,
+          the column will automatically expand accordingly.
+
+        - To adjust the width of columns manually, navigate to Edit > Column Width
+
+    - Legal Inputs:
+        - Cell addresses should be in the format of A1, B2,..., AA1, up to SF500.
+        - Maximum sheet size is 500x500.
+
+        - For formulas, ensure to start with = followed by the expression.
+          Use cell addresses within your formulas to reference specific cells.
+
+    - Loading and Saving Sheets:
+        - Use the 'File' menu to load or save your spreadsheet.
+
+    - Recover File
+        - Use the 'File' menu to recover the last Spreadsheet that was open.
+
+    - Clearing the Sheet
+        - To clear the entire sheet, select File > Clear Sheet.
+
+    If you encounter any issues, please refer to this help guide for assistance.
