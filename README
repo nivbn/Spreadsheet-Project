@@ -1,11 +1,35 @@
 
-    Welcome to the Spreadsheet Program Help!
 
-    This guide will help you navigate through the key features of the Spreadsheet Program,
-    allowing you to make the most out of your data manipulation and analysis tasks.
+Introduction
 
-    - Running the program:
-        - Command line - python main.py
+    This is a Python-based spreadsheet application that provides basic spreadsheet functionalities.
+    Follow the instructions below to set up and run the project on your local machine.
+
+
+Installation
+
+    - Clone the repository from GitHub using the following command:
+        git clone https://github.com/nivbn/Spreadsheet-Project.git
+
+    - Change your working directory to the project's folder:
+        cd Spreadsheet-Project
+
+    - Create a virtual environment:
+        python -m venv venv
+    - Activate the virtual environment:
+        - Windows:
+            venv\Scripts\activate
+        - Mac/Linux:
+            source venv/bin/activate
+
+    - Install the required Python libraries using:
+        pip install -r requirements.txt
+
+    - Execute the main script to launch the application:
+         python main.py
+
+
+Features and Usage Guide
 
     - Editing Cells:
         - Simply click on any cell to select it.
